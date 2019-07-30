@@ -3,7 +3,8 @@ jobs:
     - stage: first
       name: The first to run
       install: skip
-      script: './first'
+      script: './first.sh'
     - stage: Second
-      script: './second1'
-    - script: './second2'
+      name: Run jobs concurrently
+      script: './second1.sh'
+    - script: './second2.sh'
