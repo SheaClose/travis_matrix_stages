@@ -5,8 +5,7 @@ jobs:
     - stage: first
       name: The first to run
       install: skip
-      script:
-        - ./first.sh
+      script: './first'
     - stage: Second
-      script: './second1.sh'
-    - script: './second2.sh'
+      script: './second1'
+    - script: './second2'
