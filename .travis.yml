@@ -1,0 +1,22 @@
+dist: trusty
+language: node_js
+node_js: lts/*
+
+jobs:
+  include:
+    - stage: first
+      name: The first to run
+      install: skip
+      script:
+        - echo 'Im first!!!'
+
+    - stage: Second A
+      name: Hopefully this will have two stages, one which runs concurrently
+      install: skip
+      script:
+        - echo "I'm the first to run, by myself."
+    - stage: Second B
+      script:
+        - echo "I'm the first to run concurrently"
+      script:
+        - echo "I'm the second to run concurrently"
