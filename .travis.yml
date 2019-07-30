@@ -9,8 +9,7 @@ jobs:
       install: skip
       script:
         - ./first.sh
-    - stage: Second B
+    - stage: Second
       script:
         - ./second1.sh
-      script:
         - ./second2.sh
