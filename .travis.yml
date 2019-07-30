@@ -6,6 +6,5 @@ jobs:
       script:
         - ./first.sh
     - stage: Second
-      script:
-        - ./second1.sh
-        - ./second2.sh
+      script: './second1.sh'
+    - script: './second2.sh'
